@@ -3,8 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Level-3 : Task-1</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="slideshow">
+      <div class="slide">
+        <div class="image img1"></div>
+        <div class="image img2"></div>
+        <div class="image img3"></div>
+        <div class="image img4"></div>
+        <div class="image img1"></div>
+        <div class="image img2"></div>
+        <div class="image img3"></div>
+        <div class="image img4"></div>
+      </div>
+    </div>
+    <div class="gallery">
+      <img src="img01.png" alt="1" onclick="showLightbox(this.src)" />
+      <img src="img02.png" alt="2" onclick="showLightbox(this.src)" />
+      <img src="img03.png" alt="3" onclick="showLightbox(this.src)" />
+      <img src="img04.png" alt="4" onclick="showLightbox(this.src)" />
+    </div>
+    <div class="lightbox" onclick="hideLightbox()">
+      <img id="lightbox-img" />
+    </div>
+    <script>
+      function showLightbox(src) {
+        document.getElementById("lightbox-img").src = src;
+        document.querySelector(".lightbox").style.display = "flex";
+        document.querySelector(".lightbox").classList.add("fade");
+      }
+      function hideLightbox() {
+        document.querySelector(".lightbox").style.display = "none";
+        document.querySelector(".lightbox").classList.remove("fade");
+      }
+    </script>
+  </body>
 </html>

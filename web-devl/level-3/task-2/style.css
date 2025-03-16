@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+}
+.head {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  font-size: 1.3rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: greenyellow;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+footer {
+  padding-top: 40px;
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 10px;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+font {
+  color: orangered;
+}
